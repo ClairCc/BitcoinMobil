@@ -74,6 +74,7 @@ header img {
   font-weight: bold;
   text-decoration: none;
   color: var(--black);
+  outline: none;
 }
 .header--button span {
   display: inline-block;
