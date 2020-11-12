@@ -74,6 +74,7 @@ header img {
   font-weight: bold;
   text-decoration: none;
   color: var(--black);
+  outline: none;
 }
 .header--button span {
   display: inline-block;
@@ -123,4 +124,85 @@ main {
   font-weight: 500;
   line-height: 1.6rem;
   color: #757575;
+}
+.main-tables-container {
+  background-color: var(--off-white);
+  font-family: "Inter", sans-serif;
+}
+.main-exchange-container .main-table--title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--bitcoin-orange);
+}
+.main-tables-grid {
+  display: grid;
+  grid-template: repeat(4, 60px) / 0.3fr 0.3fr;
+  width: 100%;
+  justify-content: center;
+  gap: 3px;
+}
+.main-tables-grid .main-tables-child {
+  background-color: var(--just-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+}
+.main-tables-child_left {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: var(--grey);
+}
+
+.main-tables-child_rigth {
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #757575;
+}
+.main-tables-child:nth-last-child(8) {
+  border-radius: 20px 0 0 0;
+}
+.main-tables-child:nth-last-child(1) {
+  border-radius: 0 0 20px 0;
+}
+.main-tables-child:nth-last-child(7) {
+  border-radius: 0 20px 0 0;
+}
+.main-tables-child:nth-last-child(2) {
+  border-radius: 0 0 0 20px;
+}
+
+.main-tables-grid .up {
+  background-image: url("../assets/icons/trending-up.svg");
+}
+.main-tables-grid .down {
+  background-image: url("../assets/icons/trending-down.svg");
+}
+.main-tables-grid .trending {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.main-tables-container .currency-table--date {
+  width: 190px;
+  height: 30px;
+  margin: 0% auto;
+  margin-top: 15px;
+  padding: 8px;
+  background-color: var(--soft-orange);
+  border-radius: 8px;
+}
+.currency-table--date p {
+  font-size: 1.2rem;
+  color: var(--warm-black);
+  line-height: 1.5rem;
+  font-weight: 300;
 }
