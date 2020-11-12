@@ -124,3 +124,33 @@ main {
   line-height: 1.6rem;
   color: #757575;
 }
+.main-tables-container {
+  background-color: var(--grey);
+}
+.main-tables-grid {
+  display: grid;
+  grid-template: repeat(4, 50px) / 100px 100px;
+  width: 100%;
+  justify-content: center;
+}
+.main-tables-grid .main-tables-child {
+  background-color: var(--off-white);
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+}
+
+.main-tables-child:nth-last-child(8) {
+  border-radius: 15px 0 0 0;
+}
+.main-tables-child:nth-last-child(1) {
+  border-radius: 0 0 15px 0;
+}
+.main-tables-child:nth-last-child(7) {
+  border-radius: 0 15px 0 0;
+}
+.main-tables-child:nth-last-child(2) {
+  border-radius: 0 0 0 15px;
+}
